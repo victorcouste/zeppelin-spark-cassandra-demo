@@ -1,4 +1,4 @@
-# Introduction to Zeppelin + Apache Spark + Apache Cassandra
+# Apache Zeppelin + Apache Spark + Apache Cassandra
 
 This is a tutorial explaining how to use [Apache Zeppelin notebook](https://zeppelin.incubator.apache.org/) to interact with Apache Cassandra data through Apache Spark or directly through Cassandra CQL language.
 
