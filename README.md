@@ -26,3 +26,6 @@ The Cassandra Query Language (CQL) is the primary language for communicating wit
 Documentation on CQL usage:
 * [Introduction to CQL](http://docs.datastax.com/en/cql/3.3/cql/cqlIntro.html)
 * [Using CQL](https://docs.datastax.com/en/cql/3.3/cql/cql_using/useAboutCQL.html)
+
+The Cassandra CQL Interpreter for Apache Zeppelin is written by my colleague Duy Hai Doan  [@doanduyhai](https://twitter.com/doanduyhai)
+[CQL Interpreter documentation for Apache Zeppelin 0.5.5](https://zeppelin.incubator.apache.org/docs/0.5.5-incubating/interpreter/cassandra.html)
