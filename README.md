@@ -36,46 +36,46 @@ The Cassandra CQL Interpreter for Apache Zeppelin is written by my colleague Duy
 
 ### Installation and Setup
 
-Apache Cassandra and Apache Spark
+1. Apache Cassandra and Apache Spark
 
 First you need to install a Cassandra cluster and a Spark cluster connected with the DataStax Spark Cassandra connector. A very simple way to do that is to use DataStax Enterprise (DSE), it’s free for development or test and it contains Apache Cassandra and Apache Spark already linked.
 You can download DataStax Enterprise from https://academy.datastax.com/downloads and find installation instructions here http://docs.datastax.com/en/getting_started/doc/getting_started/installDSE.html.
 After the installation, start your DSE Cassandra cluster (it can be a single node) with Spark enable with the command line `dse cassandra -k`.
 
-Apache Zeppelin
+2. Apache Zeppelin
 
-  1. Clone Zeppelin repository from [https://github.com/apache/incubator-zeppelin](https://github.com/apache/incubator-zeppelin)
+  * Clone Zeppelin repository from [https://github.com/apache/incubator-zeppelin](https://github.com/apache/incubator-zeppelin)
   
     `git clone https://github.com/apache/incubator-zeppelin`
 
-  2. Compile with the cassandra-spark connector
+  * Compile with the cassandra-spark connector
      
      Select your version depending of your DataStax Enterprise (DSE) or Apache Spark version installed.
      For example for DSE 4.8 or Spark 1.4 `mvn clean package -Pcassandra-spark-1.4 -DskipTests`
 
-Link between Zeppelin and Spark
+3. Link between Zeppelin and Spark
 
   You have the choice to use Spark embedded within Zeppelin (automatically installed) or your own deployed Spark cluster (with DSE or in standalone). For this last option you may need to tune the `$ZEPPELINE_HOME/conf/zeppelin-env.sh` file to change the MASTER parameter. By default it is set to `spark://127.0.0.1:7077`
 
-Start Zeppelin
+4. Start Zeppelin
 
   `$ZEPPELIN_HOME\bin\zeppelin-daemon.sh start`
   
   Zeppelin must then be available at [http://localhost:8080/](http://localhost:8080/)
 
-Add the property `spark.cassandra.connection.host` with value `127.0.0.1` (or IP of one of your Cassandra cluster node) to the Spark connector interpreter
+5. Add the property `spark.cassandra.connection.host` with value `127.0.0.1` (or IP of one of your Cassandra cluster node) to the Spark connector interpreter
 
 <img src="https://raw.githubusercontent.com/victorcouste/zeppelin-spark-cassandra-demo/master/images/spark-connector-interpreter.png" width="400" height="250" />
 
-Download and import in Zeppelin the demonstration note found at [https://raw.githubusercontent.com/victorcouste/zeppelin-spark-cassandra-demo/master/Demo_Zeppelin_Spark_Cassandra.json](https://raw.githubusercontent.com/victorcouste/zeppelin-spark-cassandra-demo/master/Demo_Zeppelin_Spark_Cassandra.json)
+6. Download and import in Zeppelin the demonstration note found at [https://raw.githubusercontent.com/victorcouste/zeppelin-spark-cassandra-demo/master/Demo_Zeppelin_Spark_Cassandra.json](https://raw.githubusercontent.com/victorcouste/zeppelin-spark-cassandra-demo/master/Demo_Zeppelin_Spark_Cassandra.json)
 
 <img src="https://raw.githubusercontent.com/victorcouste/zeppelin-spark-cassandra-demo/master/images/import_note.png" width="400" height="250" />
 
-Follow paragraphs of Demo_Zeppelin_Spark_Cassandra note and have fun! 
+7. Follow paragraphs of Demo_Zeppelin_Spark_Cassandra note and have fun! 
 
 <img src="https://raw.githubusercontent.com/victorcouste/zeppelin-spark-cassandra-demo/master/images/demo_note.png" width="400" height="700" />
 
-Notes on paragraphs
+8. Notes on paragraphs
 
 In the paragraph 3, just after running it, you will have to restart the Spark interpreter. Then the error message must disappear if you re-run the paragraph 3.
   
