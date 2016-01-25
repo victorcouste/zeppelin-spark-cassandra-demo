@@ -35,21 +35,25 @@ The Cassandra CQL Interpreter for Apache Zeppelin is written by my colleague Duy
 
 1. Apache Cassandra and Apache Spark
 
-First you need to install a Cassandra cluster and a Spark cluster connected with the DataStax Spark Cassandra connector. A very simple way to do that is to use DataStax Enterprise (DSE), it’s free for development or test and it contains Apache Cassandra and Apache Spark already linked.
-You can download DataStax Enterprise from https://academy.datastax.com/downloads and find installation instructions here http://docs.datastax.com/en/getting_started/doc/getting_started/installDSE.html.
-After the installation, start your DSE Cassandra cluster (it can be a single node) with Spark enable with the command line “dse cassandra -k”.
+  First you need to install a Cassandra cluster and a Spark cluster connected with the DataStax Spark Cassandra connector. A very simple way to do that is to use DataStax Enterprise (DSE), it’s free for development or test and it contains Apache Cassandra and Apache Spark already linked.
+  You can download DataStax Enterprise from https://academy.datastax.com/downloads and find installation instructions here http://docs.datastax.com/en/getting_started/doc/getting_started/installDSE.html.
+  After the installation, start your DSE Cassandra cluster (it can be a single node) with Spark enable with the command line “dse cassandra -k”.
 
 2. Apache Zeppelin
 
   1. Clone Zeppelin repository `git clone https://github.com/apache/incubator-zeppelin`
 
   2. Compile with the cassandra-spark connector
+     
      Select your version depending of your DataStax Enterprise (DSE) or Apache Spark version installed.
      For example for DSE 4.8 or Spark 1.4 `mvn clean package -Pcassandra-spark-1.4 -DskipTests`
 
-3. Start Zeppeling
-`$ZEPPELIN_HOME\bin\zeppelin-daemon.sh start`
-Then Zeppelin must be avaiable at http://localhost:8080/#/
+3. Start Zeppelin
 
-4. Add the property spark.cassandra.connection.host with value 127.0.0.1 (IP to one of your Cassandra cluster node) to the Spark interpreter
+  `$ZEPPELIN_HOME\bin\zeppelin-daemon.sh start`
+  
+  Then Zeppelin must be available at [http://localhost:8080/](http://localhost:8080/)
+
+4. Add the property `spark.cassandra.connection.host` with value `127.0.0.1` (IP to one of your Cassandra cluster node) to the Spark interpreter
+
 
