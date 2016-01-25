@@ -40,13 +40,13 @@ After the installation, start your DSE Cassandra cluster (it can be a single nod
 
 2. Apache Zeppelin
 
-⋅⋅1. Clone Zeppelin repository git clone https://github.com/apache/incubator-zeppelin
+  1. Clone Zeppelin repository git clone https://github.com/apache/incubator-zeppelin
 
-⋅⋅2. Compile with the cassandra-spark connector
+  2. Compile with the cassandra-spark connector
 
-Select your version depending of your DataStax Enterprise (DSE) or Apache Spark version installed.
+  Select your version depending of your DataStax Enterprise (DSE) or Apache Spark version installed.
 
-For example for DSE 4.8 or Spark 1.4 : mvn clean package -Pcassandra-spark-1.4 -DskipTests
+  For example for DSE 4.8 or Spark 1.4 : mvn clean package -Pcassandra-spark-1.4 -DskipTests
 
 3. Start Zeppeling
 $ZEPPELIN_HOME\bin\zeppelin-daemon.sh start
