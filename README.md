@@ -68,6 +68,6 @@ The Cassandra CQL Interpreter for Apache Zeppelin is written by my colleague Duy
 
 7. Follow paragraphs of Demo_Zeppelin_Spark_Cassandra note and have fun! 
 
-<img src="https://raw.githubusercontent.com/victorcouste/zeppelin-spark-cassandra-demo/master/images/demo_note.png" width="400" height="500" />
+<img src="https://raw.githubusercontent.com/victorcouste/zeppelin-spark-cassandra-demo/master/images/demo_note.png" width="400" height="700" />
 
 
