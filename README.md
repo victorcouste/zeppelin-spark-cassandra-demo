@@ -33,7 +33,8 @@ The Cassandra CQL Interpreter for Apache Zeppelin is written by my colleague Duy
 
 ### Installation and Setup
 
-1. Apache Cassandra And Apache Spark
+1. Apache Cassandra and Apache Spark
+
 First you need to install a Cassandra cluster and a Spark cluster connected with the DataStax Spark Cassandra connector. A very simple way to do that is to use DataStax Enterprise (DSE), it’s free for development or test and it contains Apache Cassandra and Apache Spark already linked.
 You can download DataStax Enterprise from https://academy.datastax.com/downloads and find installation instructions here http://docs.datastax.com/en/getting_started/doc/getting_started/installDSE.html.
 After the installation, start your DSE Cassandra cluster (it can be a single node) with Spark enable with the command line “dse cassandra -k”.
@@ -43,10 +44,8 @@ After the installation, start your DSE Cassandra cluster (it can be a single nod
   1. Clone Zeppelin repository `git clone https://github.com/apache/incubator-zeppelin`
 
   2. Compile with the cassandra-spark connector
-
-  Select your version depending of your DataStax Enterprise (DSE) or Apache Spark version installed.
-
-  For example for DSE 4.8 or Spark 1.4 `mvn clean package -Pcassandra-spark-1.4 -DskipTests`
+     Select your version depending of your DataStax Enterprise (DSE) or Apache Spark version installed.
+     For example for DSE 4.8 or Spark 1.4 `mvn clean package -Pcassandra-spark-1.4 -DskipTests`
 
 3. Start Zeppeling
 `$ZEPPELIN_HOME\bin\zeppelin-daemon.sh start`
