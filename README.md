@@ -58,11 +58,16 @@ The Cassandra CQL Interpreter for Apache Zeppelin is written by my colleague Duy
   
   Zeppelin must then be available at [http://localhost:8080/](http://localhost:8080/)
 
-5. Add the property `spark.cassandra.connection.host` with value `127.0.0.1` (IP to one of your Cassandra cluster node) to the Spark interpreter
+5. Add the property `spark.cassandra.connection.host` with value `127.0.0.1` (IP to one of your Cassandra cluster node) to the Spark connector interpreter
+
+<img src="https://raw.githubusercontent.com/victorcouste/zeppelin-spark-cassandra-demo/master/images/spark-connector-interpreter.png" width="400" height="300" />
 
 6. Download and import in Zeppelin the demo note found at [https://raw.githubusercontent.com/victorcouste/zeppelin-spark-cassandra-demo/master/Text_SparkSQL_notebook.json](https://raw.githubusercontent.com/victorcouste/zeppelin-spark-cassandra-demo/master/Text_SparkSQL_notebook.json)
 
+<img src="https://raw.githubusercontent.com/victorcouste/zeppelin-spark-cassandra-demo/master/images/import_note.png" width="400" height="300" />
+
 7. Follow paragraphs of Demo_Zeppelin_Spark_Cassandra note and have fun! 
 
+<img src="https://raw.githubusercontent.com/victorcouste/zeppelin-spark-cassandra-demo/master/images/demo_note.png" width="400" height="500" />
 
 
