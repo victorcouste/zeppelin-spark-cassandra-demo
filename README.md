@@ -48,9 +48,9 @@ The Cassandra CQL Interpreter for Apache Zeppelin is written by my colleague Duy
      Select your version depending of your DataStax Enterprise (DSE) or Apache Spark version installed.
      For example for DSE 4.8 or Spark 1.4 `mvn clean package -Pcassandra-spark-1.4 -DskipTests`
 
-3. Link Zeppelin and Spark
+3. Link between Zeppelin and Spark
 
-  You have the choice to use Spark embedded within Zeppelin or your own deployed Spark cluster (with DSE or in standalone). For this last option you may need to tune the `$ZEPPELINE_HOME/conf/zeppelin-env.sh` file to change the MASTER parameter. By default it is set to `spark://127.0.0.1:7077`
+  You have the choice to use Spark embedded within Zeppelin (automatically installed) or your own deployed Spark cluster (with DSE or in standalone). For this last option you may need to tune the `$ZEPPELINE_HOME/conf/zeppelin-env.sh` file to change the MASTER parameter. By default it is set to `spark://127.0.0.1:7077`
 
 4. Start Zeppelin
 
@@ -58,16 +58,23 @@ The Cassandra CQL Interpreter for Apache Zeppelin is written by my colleague Duy
   
   Zeppelin must then be available at [http://localhost:8080/](http://localhost:8080/)
 
-5. Add the property `spark.cassandra.connection.host` with value `127.0.0.1` (IP to one of your Cassandra cluster node) to the Spark connector interpreter
+5. Add the property `spark.cassandra.connection.host` with value `127.0.0.1` (or IP of one of your Cassandra cluster node) to the Spark connector interpreter
 
 <img src="https://raw.githubusercontent.com/victorcouste/zeppelin-spark-cassandra-demo/master/images/spark-connector-interpreter.png" width="400" height="250" />
 
-6. Download and import in Zeppelin the demo note found at [https://raw.githubusercontent.com/victorcouste/zeppelin-spark-cassandra-demo/master/Demo_Zeppelin_Spark_Cassandra.json](https://raw.githubusercontent.com/victorcouste/zeppelin-spark-cassandra-demo/master/Demo_Zeppelin_Spark_Cassandra.json)
+6. Download and import in Zeppelin the demonstration note found at [https://raw.githubusercontent.com/victorcouste/zeppelin-spark-cassandra-demo/master/Demo_Zeppelin_Spark_Cassandra.json](https://raw.githubusercontent.com/victorcouste/zeppelin-spark-cassandra-demo/master/Demo_Zeppelin_Spark_Cassandra.json)
 
 <img src="https://raw.githubusercontent.com/victorcouste/zeppelin-spark-cassandra-demo/master/images/import_note.png" width="400" height="250" />
 
 7. Follow paragraphs of Demo_Zeppelin_Spark_Cassandra note and have fun! 
 
 <img src="https://raw.githubusercontent.com/victorcouste/zeppelin-spark-cassandra-demo/master/images/demo_note.png" width="400" height="700" />
+
+Note that for the paragraph 3, just after, you will have to restart the Spark interpreter. Then the error message must disappear if you re-run the paragraph 3.
+  
+<img src="https://raw.githubusercontent.com/victorcouste/zeppelin-spark-cassandra-demo/master/images/spark-csv-package_1.png" width="300" height="100" />
+<img src="https://raw.githubusercontent.com/victorcouste/zeppelin-spark-cassandra-demo/master/images/restart_interpreter.png" width="300" height="100" />
+<img src="https://raw.githubusercontent.com/victorcouste/zeppelin-spark-cassandra-demo/master/images/spark-csv-package_2.png" width="300" height="100" />
+
 
 
