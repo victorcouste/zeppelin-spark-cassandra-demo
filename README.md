@@ -39,7 +39,8 @@ The Cassandra CQL Interpreter for Apache Zeppelin is written by my colleague Duy
 
 2. Apache Zeppelin
 
-  1. Clone Zeppelin repository from [https://github.com/apache/incubator-zeppelin](https://github.com/apache/incubator-zeppelin) `git clone https://github.com/apache/incubator-zeppelin`
+  1. Clone Zeppelin repository from [https://github.com/apache/incubator-zeppelin](https://github.com/apache/incubator-zeppelin) 
+    `git clone https://github.com/apache/incubator-zeppelin`
 
   2. Compile with the cassandra-spark connector
      
