@@ -2,8 +2,6 @@
 
 This is a tutorial explaining how to use [Apache Zeppelin notebook](https://zeppelin.incubator.apache.org/) to interact with [Apache Cassandra](http://cassandra.apache.org/) NoSQL database through [Apache Spark](http://spark.apache.org/) or directly through Cassandra CQL language.
 
-*Please note this is an unofficial demo and tutorial.*
-
 ### Apache Spark
 
 Apache Spark is a fast and general engine for big data processing, with built-in modules for streaming, SQL, machine learning and graph processing.
