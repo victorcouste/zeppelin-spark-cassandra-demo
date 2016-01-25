@@ -50,7 +50,7 @@ The Cassandra CQL Interpreter for Apache Zeppelin is written by my colleague Duy
 
 3. Link Zeppelin and Spark
 
-  You have the choice to use Spark embedded in Zeppelin or your own Spark deployed (with DSE or in standalone). For this last option you may need to tune the `$ZEPPELINE_HOME/conf/zeppelin-env.sh` file to change the MASTER parameter. By default it is set to `spark://127.0.0.1:7077`
+  You have the choice to use Spark embedded within Zeppelin or your own deployed Spark cluster (with DSE or in standalone). For this last option you may need to tune the `$ZEPPELINE_HOME/conf/zeppelin-env.sh` file to change the MASTER parameter. By default it is set to `spark://127.0.0.1:7077`
 
 4. Start Zeppelin
 
