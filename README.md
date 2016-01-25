@@ -2,6 +2,11 @@
 
 This is a tutorial explaining how to use [Apache Zeppelin notebook](https://zeppelin.incubator.apache.org/) to interact with [Apache Cassandra](http://cassandra.apache.org/) NoSQL database through [Apache Spark](http://spark.apache.org/) or directly through Cassandra CQL language.
 
+### Apache Zeppelin
+
+Apache Spark is web-based notebook that enables interactive data analytics. Zeppelin interpreter concept allows any language/data-processing-backend to be plugged into Zeppelin. Currently Zeppelin supports many interpreters such as Scala(with Apache Spark), Python(with Apache Spark), SparkSQL, Hive, Markdown, CQL Cassandra, and Shell.
+More details can be found here [https://zeppelin.incubator.apache.org/](https://zeppelin.incubator.apache.org/)
+
 ### Apache Spark
 
 Apache Spark is a fast and general engine for big data processing, with built-in modules for streaming, SQL, machine learning and graph processing.
@@ -10,7 +15,7 @@ It will be used for Cassandra data processing needs (ETL, transformations, analy
 
 ### DataStax Spark Cassandra Connector
 
-[DataStax](http://www.datatstax.com) have developped a Spark Cassandra Connector to be able to read and write Cassandra data from Spark API. 
+[DataStax](http://www.datatstax.com) have developed a Spark Cassandra Connector to be able to read and write Cassandra data from Spark API. 
 The Spark Cassandra Connector lets you expose Cassandra tables as Spark RDDs (or DataFrames), write Spark RDDs (or DataFrames) to Cassandra tables, and execute arbitrary CQL queries in your Spark applications.
 
 Useful links:
@@ -33,9 +38,9 @@ The Cassandra CQL Interpreter for Apache Zeppelin is written by my colleague Duy
 
 1. Apache Cassandra and Apache Spark
 
-  First you need to install a Cassandra cluster and a Spark cluster connected with the DataStax Spark Cassandra connector. A very simple way to do that is to use DataStax Enterprise (DSE), it’s free for development or test and it contains Apache Cassandra and Apache Spark already linked.
-  You can download DataStax Enterprise from https://academy.datastax.com/downloads and find installation instructions here http://docs.datastax.com/en/getting_started/doc/getting_started/installDSE.html.
-  After the installation, start your DSE Cassandra cluster (it can be a single node) with Spark enable with the command line `dse cassandra -k`.
+First you need to install a Cassandra cluster and a Spark cluster connected with the DataStax Spark Cassandra connector. A very simple way to do that is to use DataStax Enterprise (DSE), it’s free for development or test and it contains Apache Cassandra and Apache Spark already linked.
+You can download DataStax Enterprise from https://academy.datastax.com/downloads and find installation instructions here http://docs.datastax.com/en/getting_started/doc/getting_started/installDSE.html.
+After the installation, start your DSE Cassandra cluster (it can be a single node) with Spark enable with the command line `dse cassandra -k`.
 
 2. Apache Zeppelin
 
@@ -70,11 +75,13 @@ The Cassandra CQL Interpreter for Apache Zeppelin is written by my colleague Duy
 
 <img src="https://raw.githubusercontent.com/victorcouste/zeppelin-spark-cassandra-demo/master/images/demo_note.png" width="400" height="700" />
 
-Note that for the paragraph 3, just after, you will have to restart the Spark interpreter. Then the error message must disappear if you re-run the paragraph 3.
+8. Notes on paragrahs
+
+In the paragraph 3, just after running it, you will have to restart the Spark interpreter. Then the error message must disappear if you re-run the paragraph 3.
   
 <img src="https://raw.githubusercontent.com/victorcouste/zeppelin-spark-cassandra-demo/master/images/spark-csv-package_1.png" width="300" height="100" />
 <img src="https://raw.githubusercontent.com/victorcouste/zeppelin-spark-cassandra-demo/master/images/restart_interpreter.png" width="300" height="100" />
 <img src="https://raw.githubusercontent.com/victorcouste/zeppelin-spark-cassandra-demo/master/images/spark-csv-package_2.png" width="300" height="100" />
 
-
+In the last paragraph 17, you can finally create a dashboard that can be embedded in a Website iFrame. Click on “Link this paragraph” and you will get in a new window the URL of the dashboard.
 
