@@ -62,9 +62,9 @@ The Cassandra CQL Interpreter for Apache Zeppelin is written by my colleague Duy
 
 <img src="https://raw.githubusercontent.com/victorcouste/zeppelin-spark-cassandra-demo/master/images/spark-connector-interpreter.png" width="400" height="250" />
 
-6. Download and import in Zeppelin the demo note found at [https://raw.githubusercontent.com/victorcouste/zeppelin-spark-cassandra-demo/master/Text_SparkSQL_notebook.json](https://raw.githubusercontent.com/victorcouste/zeppelin-spark-cassandra-demo/master/Text_SparkSQL_notebook.json)
+6. Download and import in Zeppelin the demo note found at [https://raw.githubusercontent.com/victorcouste/zeppelin-spark-cassandra-demo/master/Demo_Zeppelin_Spark_Cassandra.json](https://raw.githubusercontent.com/victorcouste/zeppelin-spark-cassandra-demo/master/Demo_Zeppelin_Spark_Cassandra.json)
 
-<img src="https://raw.githubusercontent.com/victorcouste/zeppelin-spark-cassandra-demo/master/images/import_note.png" width="400" height="350" />
+<img src="https://raw.githubusercontent.com/victorcouste/zeppelin-spark-cassandra-demo/master/images/import_note.png" width="400" height="250" />
 
 7. Follow paragraphs of Demo_Zeppelin_Spark_Cassandra note and have fun! 
 
