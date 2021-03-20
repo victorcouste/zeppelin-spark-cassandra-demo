@@ -1,5 +1,11 @@
 # Zeppelin + Spark + Cassandra
 
+
+[![Ask Me Anything !](https://img.shields.io/badge/Ask%20me-anything-1abc9c.svg)](https://GitHub.com/Naereen/ama)
+
+[![GitHub stars](https://img.shields.io/github/stars/Naereen/StrapDown.js.svg?style=social&label=Star&maxAge=2592000)](https://GitHub.com/Naereen/StrapDown.js/stargazers/)
+
+
 This is a tutorial explaining how to use [Apache Zeppelin notebook](https://zeppelin.incubator.apache.org/) to interact with [Apache Cassandra](http://cassandra.apache.org/) NoSQL database through [Apache Spark](http://spark.apache.org/) or directly through Cassandra CQL language.
 
 ### Apache Zeppelin
